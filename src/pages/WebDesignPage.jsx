@@ -1,0 +1,67 @@
+import { useState } from 'react'
+import '../components/CSS/WebDesignPage.css'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+
+function WebDesignPage() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="WebDesignPage">
+      <Navbar></Navbar>
+      
+      <div className="singleServicePageBanner">
+        <h1 className="singleServiceHeading">WEBSITE<br></br>DEVELOPMENT</h1>
+        <p className="singleServiceSubheading">Losing customers to an outdated website? Our modern, mobile-friendly websites not only look beautiful – they actually get sales. Our layouts have been proven to drive conversion rates, and we offer premium SEO services to help your website rank on Google. <br></br><br></br>Whether you need a simple landing page or a full-blown online store, we’ll make sure your website brings the results your business deserves.</p>
+        <div className="singleServiceOurPackages">
+          <h2 className="singleServiceOurPackagesHeading">OUR PACKAGES</h2>  
+        </div>
+
+        <div className="singleServiceColumns">
+          <div className="singleServicePackage">
+            <h3 className="singleServicePackageHeading">BASIC<br></br>PACKAGE:</h3>
+            <p className="singleServicePackageSubheading">R000 - R100</p>
+            <p className="singleServicePackageSubheading">Example copy.</p>
+
+            <p className="singleServicePackageFeature">- Feature 1</p>
+            <div className="singleServicePackageButtonGroup">
+              <a href='/contact' className='singleServicePackageLink'><button className="singleServicePackageButton">CONTACT US</button></a>
+            </div>
+          </div>
+
+          <div className="singleServicePackageMiddle">
+            <h3 className="singleServicePackageHeading">STANDARD<br></br>PACKAGE:</h3>
+            <p className="singleServicePackageSubheading">R000 - R100</p>
+            <p className="singleServicePackageSubheading">Example copy.</p>
+
+            <p className="singleServicePackageFeature">- Feature 1</p>
+            <div className="singleServicePackageButtonGroup">
+              <a href='/contact' className='singleServicePackageLink'><button className="singleServicePackageButton">CONTACT US</button></a>
+            </div>
+          </div>
+
+          <div className="singleServicePackage">
+            <h3 className="singleServicePackageHeading">PREMIUM<br></br>PACKAGE:</h3>
+            <p className="singleServicePackageSubheading">R000 - R100</p>
+            <p className="singleServicePackageSubheading">Example copy.</p>
+
+            <p className="singleServicePackageFeature">- Feature 1</p>
+            <div className="singleServicePackageButtonGroup">
+              <a href='/contact' className='singleServicePackageLink'><button className="singleServicePackageButton">CONTACT US</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div className="singleServiceOurPackages">
+          <h2 className="singleServiceOurPackagesHeading">ABOUT WEBSITE DEVELOPMENT:</h2>  
+        </div>
+
+        <p className="singleServiceSubheading spacingBelow">Losing customers to an outdated website? Our modern, mobile-friendly websites not only look beautiful – they actually get sales. Our layouts have been proven to drive conversion rates, and we offer premium SEO services to help your website rank on Google. <br></br><br></br>Whether you need a simple landing page or a full-blown online store, we’ll make sure your website brings the results your business deserves.</p>
+      </div>
+
+      <Footer></Footer>
+    </div>
+  )
+}
+
+export default WebDesignPage
