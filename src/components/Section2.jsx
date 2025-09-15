@@ -4,6 +4,8 @@ import { useWindowScrollPositions } from './Hooks/useWindowScrollPositions'
 import Hero2 from './Hero2'
 import HomepageServices from './HomepageServices'
 import HomepageResults from './HomepageResults'
+import ContactPageContactSection from './ContactPageContactSection'
+import Footer from '../components/Footer.jsx'
 
 function Section2() {
   const [count, setCount] = useState(0)
@@ -20,10 +22,16 @@ function Section2() {
   } else {
     return (
       <>
-          <div className="preSection2" style={{ transform: 'translateY(-132vh)'}}>
+          <div className="preSection2" style={{ position: 'absolute', top: 0}}>
               <Hero2></Hero2>    
               <HomepageServices></HomepageServices>
               <HomepageResults></HomepageResults>
+
+              <div className="homepageContactSectionWrapper">
+                  <ContactPageContactSection></ContactPageContactSection>
+              </div>
+
+              <Footer></Footer>
           </div>
       </>
     )

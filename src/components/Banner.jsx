@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import './CSS/Banner.css'
+import { useWindowScrollPositions } from './Hooks/useWindowScrollPositions'
 
 function Banner() {
   const [count, setCount] = useState(0)
-
+  const { scrollX, scrollY } = useWindowScrollPositions()
+  
   return (
     <>
         <div className="bannerWrapper">

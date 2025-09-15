@@ -24,6 +24,8 @@
     width: 65%;
     text-align: center;
     margin-top: 3vh;
+    opacity: 0;
+    animation: scrollIn 1s 0s ease forwards;
 }
 
 .singleServiceOurPackages {
@@ -65,6 +67,16 @@
     background-color: rgba(0, 0, 0, 1);
     border-radius: 20px;
     padding: 2%;
+}
+
+@keyframes scrollIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    } to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .singleServicePackageHeading {
@@ -128,7 +140,7 @@
 }
 
 .spacingBelow {
-    margin-bottom: 14vh;
+    margin-bottom: 24vh;
 }
 
 @media (max-width: 845px) {
@@ -178,4 +190,10 @@
         width: 90%;
         background-color: black!important;
     }
+}
+
+.singleServiceBlogSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
